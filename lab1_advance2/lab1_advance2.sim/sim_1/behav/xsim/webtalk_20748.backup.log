@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 28 01:55:25 2021
+# Process ID: 20748
+# Current directory: C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance2/lab1_advance2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance2/lab1_advance2.sim/sim_1/behav/xsim/xsim.dir/Crossbar_2x2_4bit_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance2/lab1_advance2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance2/lab1_advance2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/penny/OneDrive/Desktop/logic -notrace
+invalid command name "Common"
+    while executing
+"Common 17-165"
+    invoked from within
+"ERROR: [Common 17-165] Too many positional options when parsing 'lab/project_2/project_2.hw/webtalk/labtool_webtalk.log', please type 'webtalk -help' ..."
+    (file "C:/Users/penny/OneDrive/Desktop/logic" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 28 01:55:25 2021...

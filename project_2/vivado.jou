@@ -1,0 +1,182 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 26 23:20:46 2021
+# Process ID: 18540
+# Current directory: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11420 C:\Users\penny\OneDrive\Desktop\logic design lab\project_2\project_2.xpr
+# Log file: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/vivado.log
+# Journal file: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source D_Flip_Flop_t.tcl
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Mux_4x1_4bit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+place_ports {a[0]} A14
+place_ports {a[1]} A6
+place_ports {a[2]} A17
+place_ports {a[3]} C15
+place_ports {b[0]} C16
+place_ports {b[1]} B18
+place_ports {b[2]} G18
+place_ports {b[3]} G2
+place_ports {c[0]} G3
+place_ports {c[1]} G19
+place_ports {c[2]} H1
+place_ports {c[3]} H2
+place_ports {d[0]} H17
+place_ports {d[1]} K17
+place_ports {d[2]} K2
+place_ports {d[3]} J18
+place_ports {f[0]} L1
+place_ports {f[1]} L2
+place_ports {f[2]} L3
+place_ports {f[3]} L17
+place_ports {sel[0]} N1
+place_ports {sel[1]} M19
+place_ports {a[1]} T1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[1]}]]
+file mkdir {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new}
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new/cons.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new/cons.xdc}}
+set_property target_constrs_file {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new/cons.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/impl_1/Mux_4x1_4bit.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/impl_1/Mux_4x1_4bit.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close_design
+close_sim
+close_project
+create_project lab1_2 {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2} -part xc7a35tcpg236-1
+add_files -norecurse {{C:/Users/penny/OneDrive/Desktop/logic design lab/Lab1_Team23_Crossbar_2x2_4bit.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in1[3]} {in1[2]} {in1[1]} {in1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in2[3]} {in2[2]} {in2[1]} {in2[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out1[3]} {out1[2]} {out1[1]} {out1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out2[3]} {out2[2]} {out2[1]} {out2[0]}]]
+place_ports {in1[3]} L1
+place_ports {in1[2]} P1
+place_ports {in1[1]} N3
+place_ports {in1[0]} P3
+place_ports {in2[3]} U3
+place_ports {in2[2]} W3
+place_ports {in2[1]} V3
+place_ports {in2[0]} V13
+place_ports {out1[3]} V14
+place_ports {out1[2]} U14
+set_property package_pin "" [get_ports [list  {out1[1]}]]
+set_property package_pin "" [get_ports [list  {out1[0]}]]
+place_ports {out1[1]} U15
+place_ports {out1[0]} W18
+place_ports {out2[3]} V19
+place_ports {out2[2]} U19
+place_ports {out2[1]} E19
+place_ports {out2[0]} U16
+file mkdir {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new}
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new/cons.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new/cons.xdc}}
+set_property target_constrs_file {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new/cons.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_project
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source Mux_4x1_4bit_t.tcl
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.xpr}
+update_compile_order -fileset sources_1
+current_project project_1
+close_project
+close_project
+close_sim
+close_project
+create_project lab1_advance1 {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1} -part xc7a35tcpg236-1
+add_files -norecurse {{C:/Users/penny/OneDrive/Desktop/logic design lab/Lab1_Team23_Dmux_1x4_4bit.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+file mkdir {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new}
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v} w ]
+add_files {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source Dmux_1x4_4bit_t.tcl
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v} w ]
+add_files {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v}}
+close_sim
+launch_simulation
+source Dmux_1x4_4bit_t.tcl
+run all
+run all
+close_sim

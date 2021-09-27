@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 23 16:43:09 2021
+# Process ID: 8316
+# Current directory: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/D_Flip_Flop_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/penny/OneDrive/Desktop/logic -notrace
+couldn't read file "C:/Users/penny/OneDrive/Desktop/logic": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 23 16:43:09 2021...

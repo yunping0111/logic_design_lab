@@ -1,0 +1,505 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 26 23:20:46 2021
+# Process ID: 18540
+# Current directory: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11420 C:\Users\penny\OneDrive\Desktop\logic design lab\project_2\project_2.xpr
+# Log file: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/vivado.log
+# Journal file: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/penny/OneDrive/Desktop/Lab1_Mux_4x1_4bit.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/penny/OneDrive/Desktop/Mux_4x1_4bit_t.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/penny/OneDrive/Desktop/Lab1_D_Flip_Flop.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/penny/OneDrive/Desktop/D_Flip_Flop_t.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.129 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_Flip_Flop_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_Flip_Flop_t_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim'
+"xelab -wto e55703db71e6441ebb42af20804e0a90 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_Flip_Flop_t_behav xil_defaultlib.D_Flip_Flop_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e55703db71e6441ebb42af20804e0a90 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_Flip_Flop_t_behav xil_defaultlib.D_Flip_Flop_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "D_Flip_Flop_t_behav -key {Behavioral:sim_1:Functional:D_Flip_Flop_t} -tclbatch {D_Flip_Flop_t.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source D_Flip_Flop_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 6 ns : File "C:/Users/penny/OneDrive/Desktop/D_Flip_Flop_t.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'D_Flip_Flop_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1017.129 ; gain = 0.000
+launch_runs synth_1 -jobs 2
+[Sun Sep 26 23:24:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1096.563 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1173.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1299.156 ; gain = 282.027
+set_property top Mux_4x1_4bit [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Sep 26 23:26:31 2021] Launched synth_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.930 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+place_ports {a[0]} A14
+place_ports {a[1]} A6
+place_ports {a[2]} A17
+place_ports {a[3]} C15
+place_ports {b[0]} C16
+place_ports {b[1]} B18
+place_ports {b[2]} G18
+place_ports {b[3]} G2
+place_ports {c[0]} G3
+place_ports {c[1]} G19
+place_ports {c[2]} H1
+place_ports {c[3]} H2
+place_ports {d[0]} H17
+place_ports {d[1]} K17
+place_ports {d[2]} K2
+place_ports {d[3]} J18
+place_ports {f[0]} L1
+place_ports {f[1]} L2
+place_ports {f[2]} L3
+place_ports {f[3]} L17
+place_ports {sel[0]} N1
+place_ports {sel[1]} M19
+place_ports {a[1]} T1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {c[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {d[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[1]}]]
+file mkdir {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new}
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new/cons.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new/cons.xdc}}
+set_property target_constrs_file {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.srcs/constrs_1/new/cons.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Sep 26 23:31:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Sep 26 23:32:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Sep 26 23:35:57 2021] Launched impl_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1921.766 ; gain = 2.520
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183711628A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3448.398 ; gain = 1526.633
+set_property PROGRAM.FILE {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/impl_1/Mux_4x1_4bit.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.runs/impl_1/Mux_4x1_4bit.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project lab1_2 {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2} -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files -norecurse {{C:/Users/penny/OneDrive/Desktop/logic design lab/Lab1_Team23_Crossbar_2x2_4bit.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Sun Sep 26 23:52:45 2021] Launched synth_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3494.777 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3494.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in1[3]} {in1[2]} {in1[1]} {in1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in2[3]} {in2[2]} {in2[1]} {in2[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out1[3]} {out1[2]} {out1[1]} {out1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out2[3]} {out2[2]} {out2[1]} {out2[0]}]]
+place_ports {in1[3]} L1
+place_ports {in1[2]} P1
+place_ports {in1[1]} N3
+place_ports {in1[0]} P3
+place_ports {in2[3]} U3
+place_ports {in2[2]} W3
+place_ports {in2[1]} V3
+place_ports {in2[0]} V13
+place_ports {out1[3]} V14
+place_ports {out1[2]} U14
+set_property package_pin "" [get_ports [list  {out1[1]}]]
+set_property package_pin "" [get_ports [list  {out1[0]}]]
+place_ports {out1[1]} U15
+place_ports {out1[0]} W18
+place_ports {out2[3]} V19
+place_ports {out2[2]} U19
+place_ports {out2[1]} E19
+place_ports {out2[0]} U16
+file mkdir {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new}
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new/cons.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new/cons.xdc}}
+set_property target_constrs_file {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.srcs/constrs_1/new/cons.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Sep 26 23:57:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Sep 26 23:58:14 2021] Launched impl_1...
+Run output will be captured here: C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_2/lab1_2.runs/impl_1/runme.log
+close_project
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Mux_4x1_4bit_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Mux_4x1_4bit_t_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.sim/sim_1/behav/xsim'
+"xelab -wto 4b75b97b060346fdbc01b11c96b7aadc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Mux_4x1_4bit_t_behav xil_defaultlib.Mux_4x1_4bit_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4b75b97b060346fdbc01b11c96b7aadc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Mux_4x1_4bit_t_behav xil_defaultlib.Mux_4x1_4bit_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2_1/project_2_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mux_4x1_4bit_t_behav -key {Behavioral:sim_1:Functional:Mux_4x1_4bit_t} -tclbatch {Mux_4x1_4bit_t.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Mux_4x1_4bit_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 9 ns : File "C:/Users/penny/OneDrive/Desktop/Mux_4x1_4bit_t.v" Line 36
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mux_4x1_4bit_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3528.102 ; gain = 0.000
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_1/project_1.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_1/project_1.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/penny/OneDrive/Desktop/Lab1_Fanout_4.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/penny/OneDrive/Desktop/Fanout_4_t.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+open_project {C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/penny/OneDrive/Desktop/logic design lab/project_2/project_2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+current_project project_1
+close_project
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project lab1_advance1 {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1} -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files -norecurse {{C:/Users/penny/OneDrive/Desktop/logic design lab/Lab1_Team23_Dmux_1x4_4bit.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+can't create directory "C:/Users/penny/OneDrive/Desktop/logic": file already exists
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+can't create directory "C:/Users/penny/OneDrive/Desktop/logic": file already exists
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+can't create directory "C:/Users/penny/OneDrive/Desktop/logic": file already exists
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+can't create directory "C:/Users/penny/OneDrive/Desktop/logic": file already exists
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+can't create directory "C:/Users/penny/OneDrive/Desktop/logic": file already exists
+file mkdir C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new
+can't create directory "C:/Users/penny/OneDrive/Desktop/logic": file already exists
+file mkdir {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new}
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v} w ]
+add_files {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Dmux_1x4_4bit_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Dmux_1x4_4bit_t_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/penny/OneDrive/Desktop/logic design lab/Lab1_Team23_Dmux_1x4_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dmux_1x4_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dmux_1x4_4bit_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+"xelab -wto 1587b134b359431882afa78d9787d699 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1587b134b359431882afa78d9787d699 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Dmux_1x4_4bit
+Compiling module xil_defaultlib.Dmux_1x4_4bit_t
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Dmux_1x4_4bit_t_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/penny/OneDrive/Desktop/logic -notrace
+invalid command name "Common"
+    while executing
+"Common 17-165"
+    invoked from within
+"ERROR: [Common 17-165] Too many positional options when parsing 'lab/project_2/project_2.hw/webtalk/labtool_webtalk.log', please type 'webtalk -help' ..."
+    (file "C:/Users/penny/OneDrive/Desktop/logic" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 27 02:06:30 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3531.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Dmux_1x4_4bit_t_behav -key {Behavioral:sim_1:Functional:Dmux_1x4_4bit_t} -tclbatch {Dmux_1x4_4bit_t.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Dmux_1x4_4bit_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 9 ns : File "C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Dmux_1x4_4bit_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3536.203 ; gain = 4.840
+close [ open {C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v} w ]
+add_files {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/jj.v}}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Dmux_1x4_4bit_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Dmux_1x4_4bit_t_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/penny/OneDrive/Desktop/logic design lab/Lab1_Team23_Dmux_1x4_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dmux_1x4_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dmux_1x4_4bit_t
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+"xelab -wto 1587b134b359431882afa78d9787d699 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1587b134b359431882afa78d9787d699 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Dmux_1x4_4bit
+Compiling module xil_defaultlib.Dmux_1x4_4bit_t
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Dmux_1x4_4bit_t_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Dmux_1x4_4bit_t_behav -key {Behavioral:sim_1:Functional:Dmux_1x4_4bit_t} -tclbatch {Dmux_1x4_4bit_t.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Dmux_1x4_4bit_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 28 ns : File "C:/Users/penny/OneDrive/Desktop/logic design lab/lab1_advance1/lab1_advance1.srcs/sources_1/new/Dmux_1x4_4bit_t.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Dmux_1x4_4bit_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3538.426 ; gain = 1.508
+run all
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 27 02:22:05 2021...
