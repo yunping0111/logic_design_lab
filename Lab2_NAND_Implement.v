@@ -40,27 +40,20 @@ my_and a5(ans5, sel5, out5);
 my_and a6(ans6, sel6, out6);
 my_and a7(ans7, sel7, out7);
 
-//wire out0, out1, out2, out3, out4, out5;
-//my_or or0(out0, ans0, ans1);
-//my_or or1(out1, out0, ans2);
-//my_or or2(out2, out1, ans3);
-//my_or or3(out3, out2, ans4);
-//my_or or4(out4, out3, ans5);
-//my_or or5(out5, out4, ans6);
-//my_or or6(out, out5, ans7);
-or7 ansss(out, ans1, ans2, ans3, ans4, ans5, ans6, ans7);
+or7 ansss(out, ans0, ans1, ans2, ans3, ans4, ans5, ans6, ans7);
 endmodule
 
-module or7(ans, a, b, c, d, e, f, g);
-input a, b, c, d, e, f, g;
+module or7 (ans, a, b, c, d, e, f, g, h);
+input a, b, c, d, e, f, g, h;
 output ans;
 wire tmp0, tmp1, tmp2, tmp3, tmp4, tmp5;
 my_or or0(tmp0, a, b);
 my_or or1(tmp1, c, d);
 my_or or2(tmp2, e, f);
-my_or or3(tmp3, tmp0, tmp1);
-my_or or4(tmp4, tmp2, g);
-my_or or5(ans, tmp3, tmp4);
+my_or or3(tmp3, g, h);
+my_or or4(tmp5, tmp0, tmp1);
+my_or or5(tmp4, tmp2, tmp3);
+my_or or6(ans, tmp5, tmp4);
 endmodule
 
 module my_and3(f, a, b, c);
@@ -68,7 +61,7 @@ input a, b, c;
 wire tmp0, tmp1;
 output f;
 my_and and0(tmp0, a, b);
-nand nand1(f, tmp0, c);
+my_and and1(f, tmp0, c);
 endmodule
 
 module my_not(f, x);
